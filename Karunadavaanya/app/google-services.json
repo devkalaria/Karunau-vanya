@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "798038994432",
+    "firebase_url": "https://karunadavanya-972bb-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "karunadavanya-972bb",
+    "storage_bucket": "karunadavanya-972bb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798038994432:android:7be28b9b12e3fa3113b2e5",
+        "android_client_info": {
+          "package_name": "com.example.karunadavaanya"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc2Uh2LWUDO9m5GqzbbGXJbA9ljFtZtUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798038994432:android:788def5aebc18b4b13b2e5",
+        "android_client_info": {
+          "package_name": "com.example.karunadavaanya.premium"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc2Uh2LWUDO9m5GqzbbGXJbA9ljFtZtUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

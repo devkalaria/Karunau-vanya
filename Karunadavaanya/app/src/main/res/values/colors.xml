@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Premium Dark Forest Palette -->
+    <color name="deep_forest_green">#071E16</color>
+    <color name="emerald_accent">#10B981</color>
+    <color name="glass_white">#26FFFFFF</color> <!-- 15% White -->
+    <color name="glass_border">#40FFFFFF</color> <!-- 25% White -->
+    <color name="off_white">#F8FAFC</color>
+    <color name="muted_green">#94A3B8</color>
+    <color name="premium_glass_dark">#E6071E16</color> <!-- 90% Dark Forest -->
+
+    <!-- Alert Severities -->
+    <color name="danger_red">#EF4444</color>
+    <color name="warning_amber">#F59E0B</color>
+    <color name="info_blue">#3B82F6</color>
+
+    <!-- Legacy Mappings (Keeping IDs to avoid errors but updating values) -->
+    <color name="forest_green">#064E3B</color>
+    <color name="alert_card_bg">#111827</color>
+    <color name="animal_name_red">#FCA5A5</color>
+    <color name="warning_red">#EF4444</color>
+    <color name="text_gray">#94A3B8</color>
+    <color name="text_dark">#F1F5F9</color>
+</resources>

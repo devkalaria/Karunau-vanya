@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_forest_green">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Background -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/forest_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@null" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/dark_gradient_overlay"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="160dp">
+
+            <TextView
+                android:id="@+id/aboutTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Karunada-Vanya"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preserving Karnataka’s Natural Heritage"
+                android:textColor="@color/emerald_accent"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:cardBackgroundColor="@color/glass_white"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/glass_border">
+
+                <TextView
+                    android:id="@+id/aboutDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="Karunada-Vanya is dedicated to preserving the rich wildlife heritage of Karnataka. Our mission is to bridge the gap between people and nature through technology and education.\n\nWildlife Education:\nProviding informative flashcards and resources for children to learn about various animal species, their habitats, and behaviors.\n\nSafety Alerts:\nA real-time reporting system to notify villagers and forest departments about wildlife movements, helping to reduce human-animal conflicts and ensuring the safety of both humans and animals.\n\nCoexistence:\nPromoting the importance of peaceful coexistence and providing safety guidelines for those living near forest boundaries."
+                    android:textColor="@color/off_white"
+                    android:textSize="16sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="32dp"
+                android:text="Version 1.0.0 • Developed for Karnataka"
+                android:textAlignment="center"
+                android:textColor="@color/muted_green"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

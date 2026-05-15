@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KarunadaVanya</string>
+    <string name="animal_image">Animal Image</string>
+    <string name="animal_name">Animal Name</string>
+    <string name="animal_short_description">Animal short description</string>
+    <string name="wildlife_wiki">Wildlife Wiki</string>
+    <string name="animal_detail">Animal Detail</string>
+    <string name="welcome_message">Welcome to\nKarunada-Vanya</string>
+    <string name="open_wiki">Open Wildlife Wiki</string>
+    <string name="about_app">About App</string>
+    <string name="movement_alerts">Movement Alerts</string>
+</resources>

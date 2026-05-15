@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_forest_green"
+    tools:context=".MainActivity">
+
+    <!-- Full Screen Background -->
+    <ImageView
+        android:id="@+id/backgroundImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/forest_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@null" />
+
+    <!-- Cinematic Overlay -->
+    <View
+        android:id="@+id/overlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dark_gradient_overlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/off_white" />
+
+    <!-- Logo in Glass Circle -->
+    <FrameLayout
+        android:id="@+id/logoContainer"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/circle_glass"
+        android:padding="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <ImageView
+            android:id="@+id/logoImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/karnataka_logo"
+            android:contentDescription="@string/app_name" />
+    </FrameLayout>
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/welcomeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:paddingHorizontal="24dp"
+        android:text="@string/welcome_message"
+        android:textAlignment="center"
+        android:textColor="@color/off_white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoContainer" />
+
+    <TextView
+        android:id="@+id/taglineTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Protecting and exploring Karnataka’s biodiversity."
+        android:textColor="@color/muted_green"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeTxt" />
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="48dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOpenWiki"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/glass_button"
+            android:drawableStart="@android:drawable/ic_menu_agenda"
+            android:drawablePadding="16dp"
+            android:paddingStart="24dp"
+            android:text="@string/open_wiki"
+            android:textAllCaps="false"
+            android:textColor="@color/off_white"
+            android:textSize="18sp"
+            android:gravity="center_vertical|start" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnForestSounds"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/glass_button"
+            android:drawableStart="@android:drawable/ic_lock_silent_mode_off"
+            android:drawablePadding="16dp"
+            android:paddingStart="24dp"
+            android:text="Forest Sounds"
+            android:textAllCaps="false"
+            android:textColor="@color/off_white"
+            android:textSize="18sp"
+            android:gravity="center_vertical|start" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMovementAlert"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/glass_button"
+            android:drawableStart="@android:drawable/ic_dialog_alert"
+            android:drawablePadding="16dp"
+            android:paddingStart="24dp"
+            android:text="@string/movement_alerts"
+            android:textAllCaps="false"
+            android:textColor="@color/off_white"
+            android:textSize="18sp"
+            android:gravity="center_vertical|start" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAboutApp"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/glass_button"
+            android:drawableStart="@android:drawable/ic_menu_info_details"
+            android:drawablePadding="16dp"
+            android:paddingStart="24dp"
+            android:text="@string/about_app"
+            android:textAllCaps="false"
+            android:textColor="@color/off_white"
+            android:textSize="18sp"
+            android:gravity="center_vertical|start" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

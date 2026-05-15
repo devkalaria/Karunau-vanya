@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Karunadavaanya" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/emerald_accent</item>
+        <item name="android:windowBackground">@color/deep_forest_green</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="RoundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <style name="CircularShape" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
